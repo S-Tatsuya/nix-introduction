@@ -6,5 +6,6 @@
   outputs = { sub_flake, ...}: {
     hello = "Hello, world!";
     sum_1_2 = sub_flake.add_a_b 1 2;
+    now = builtins.currentTime;
   };
 }
